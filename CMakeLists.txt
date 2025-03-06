@@ -101,6 +101,7 @@ set(MIALLIB_H
   ${MIALLIB_SRC_DIR}/miallib_swig.h
   ${MIALLIB_SRC_DIR}/mialtypes.h
   ${MIALLIB_SRC_DIR}/myhull.h
+  ${MIALLIB_SRC_DIR}/myhull_c.h
   ${MIALLIB_SRC_DIR}/op.h
   )
 
@@ -200,6 +201,8 @@ set(SOURCES
   ${MIALLIB_SRC_DIR}/mspa.c
   ${MIALLIB_SRC_DIR}/myhull.cc
   ${MIALLIB_SRC_DIR}/myhull.h
+  ${MIALLIB_SRC_DIR}/myhull_c.c
+  ${MIALLIB_SRC_DIR}/myhull_c.h
   ${MIALLIB_SRC_DIR}/natngbint.c
   ${MIALLIB_SRC_DIR}/newlabelcc.c
   ${MIALLIB_SRC_DIR}/oiht.c
