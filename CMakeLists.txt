@@ -397,7 +397,7 @@ add_definitions(-DSHAPE_DLL)
 INSTALL(TARGETS ${MIALLIB_LIB_NAME}
   EXPORT "${MIALLIB_LIB_NAME}"
   COMPONENT libraries
-  LIBRARY DESTINATION lib)
+  LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
 INSTALL(FILES ${MIALLIB_H} DESTINATION include/miallib/)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/miallib-config.cmake
   ${CMAKE_CURRENT_BINARY_DIR}/miallib-config-version.cmake
@@ -405,5 +405,5 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/miallib-config.cmake
   COMPONENT headers
   )
 INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/miallib.pc
-        DESTINATION lib/pkgconfig
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig
 )
